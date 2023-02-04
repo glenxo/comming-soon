@@ -219,33 +219,33 @@
     <!-- reviews section ends -->
 
     <!-- booking form section starts  -->
+    <section>
+      <div id="enterDetails">
+        <h1>Booking</h1>
 
-    <section class="book-form" id="book-form">
-      <form action="">
-        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
-          <span>BOOK AN APPOINTMENT</span>
-          <input type="text" placeholder="Location to visit" value="" />
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
-          <span>Date</span>
-          <input type="date" value="" />
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
-          <span>how many visitors?</span>
-          <input type="number" placeholder="Amount of Visitors" value="" />
-        </div>
-        <input
-          data-aos="zoom-in"
-          data-aos-delay="600"
-          type="submit"
-          value="Book now"
-          class="btn"
-        />
-      </form>
-    </section>
-    
+        <p>You'll receive a confirmation email with details on the requested date's 
+            availability and a promotional link to purchase the trip. The email will 
+            also include weather information and recommended activities based on the 
+            travelers' interests.</p>
+
+        <h4>Where</h4> 
+        <input id="enterDestination" placeholder="Location to visit" type="text"> 
+
+        <h4>When</h4> 
+        <input id="enterDate" type="date"> 
+
+        <h4>Email</h4> 
+        <input id="enterEmail" placeholder="Enter your Email" type="text">
+        
+
+        <h4>How Many</h4> 
+        <input id="enterAmount" placeholder="Amount of Visitors"  type="number"> <br><br>
+
+        <button id="insert">Book this trip</button>
+    <br><br>
+    </div>
+    </section>    
     <!-- booking form section ends -->
-
     <!-- footer section starts  -->
 
     <section class="footer">
@@ -297,7 +297,56 @@
     </div>
   </section>
     <!-- footer section ends -->
-
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  
+      const firebaseConfig = {
+      apiKey: "AIzaSyD4TGx85JwOrVStOuCwzRIR_SfyK1ePUN0",
+      authDomain: "bookingwidget-51b84.firebaseapp.com",
+      databaseURL: "https://bookingwidget-51b84-default-rtdb.firebaseio.com",
+      projectId: "bookingwidget-51b84",
+      storageBucket: "bookingwidget-51b84.appspot.com",
+      messagingSenderId: "387804356437",
+      appId: "1:387804356437:web:ddaed0de5ab81581c759dc"
+      };
+  
+      const app = initializeApp(firebaseConfig);
+  
+      import {getDatabase, ref, get, set, child, update, remove}
+      from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+  
+      const db = getDatabase();
+  
+      let enterDestination = document.querySelector("#enterDestination");
+      let enterDate = document.querySelector("#enterDate");
+      let enterEmail = document.querySelector("#enterEmail");
+      let enterAge = document.querySelector("#enterAmount");
+  
+  
+      let insertBtn = document.querySelector("#insert");
+  function InsertData() {
+      set(ref(db, "Bookings/" + enterDestination.value), {
+          Date: enterDate.value,
+          Email: enterEmail.value,
+          Destination: enterDestination.value,
+          Amount: enterAmount.value
+      })
+      .then(() => {
+          alert("Booking added successfully, Check your email for confirmation, now back to main page");
+          enterDate.value = "";
+          enterEmail.value = "";
+          enterDestination.value = "";
+          enterAmount.value = "";
+          window.location.replace("https://glenxo.github.io/Lift-Intl-cart/");
+      })
+      .catch(error => {
+          alert(error);
+      });
+  }
+  insertBtn.addEventListener("click", InsertData);
+  
+  
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
