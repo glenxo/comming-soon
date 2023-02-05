@@ -676,18 +676,9 @@ html body.parallax section div#enterDetails input#enterAmount {
 
 #enterDetails p {
     text-align: center;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.485);
-    text-shadow: 0 0 5px #a5cad2aa, 
-                0 0 10px #a5cad25b, 
-                0 0 20px #a5cad252, 
-                0 0 40px #c84bb54e,
-                0 0 75px #ed87e656;
-    background: -webkit-linear-gradient(rgb(152, 201, 208),#9dbfff, rgb(100, 190, 255), rgb(225, 160, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-top: -2rem;
     padding: 3rem;
-
+    font-weight: 500;
     font-size: 2.2rem;
     color: var(--color-ship-cove);
 }
@@ -928,13 +919,6 @@ html body.parallax section div#enterDetails input#enterAmount {
   #enterDetails > h1:nth-child(1){
       text-align: center;
       letter-spacing: 7px;
-      -webkit-text-stroke: 1.0px rgb(255, 255, 255);
-      text-shadow: 0 0 5px #a5cad28f, 
-                    0 0 10px #a5cad2a4, 
-                    0 0 75px #a5cad2a8;
-      background: -webkit-linear-gradient(rgb(153, 243, 255),rgb(161, 74, 243), rgb(255, 0, 234));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       font-weight: 1000;
       margin-top: 4%;
       font-size: 6rem;
@@ -943,15 +927,9 @@ html body.parallax section div#enterDetails input#enterAmount {
   
   #enterDetails H4 {
           text-align: center;
-      -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.485);
-      text-shadow: 0 0 5px #a5cad2aa, 
-                  0 0 40px #c84bb54e,
-                  0 0 75px #ed87e656;
-      background: -webkit-linear-gradient(rgb(152, 201, 208),#9dbfff, rgb(100, 190, 255), rgb(225, 160, 255));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       font-size: 3rem;
       margin-top: 12%;
+      text-decoration: none;
       margin-bottom: -6%;
       color: var(--color-ship-cove);
   }
@@ -959,14 +937,8 @@ html body.parallax section div#enterDetails input#enterAmount {
   
   #enterDetails p {
       text-align: center;
-  
-      -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.485);
-      text-shadow: 0 0 5px #a5cad2aa, 
-                  0 0 75px #ed87e656;
-      background: -webkit-linear-gradient(rgb(152, 201, 208),#9dbfff, rgb(100, 190, 255), rgb(225, 160, 255));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       margin-top: 3rem;
+      font-weight: bold;
       font-size: 2rem;
       padding: 0rem;
       color: var(--color-ship-cove);
