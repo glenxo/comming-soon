@@ -883,7 +883,7 @@ html body.parallax section div#enterDetails input#enterAmount {
     padding: 3rem 2rem;
   }
 
-}
+
   
   input {
     text-align: center;
@@ -996,7 +996,7 @@ html body.parallax section div#enterDetails input#enterAmount {
       font-size: 4rem;
       color: var(--color-geraldine);
   }
-  }
+}
 
   @media (max-width: 991px) {
     html {
