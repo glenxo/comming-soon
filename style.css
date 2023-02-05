@@ -651,7 +651,7 @@ html body.parallax section div#enterDetails input#enterAmount {
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     margin-top: 4%;
-    font-size: 4.7vw;
+    font-size: 5vw;
     display: block;
 }
 
@@ -666,7 +666,9 @@ html body.parallax section div#enterDetails input#enterAmount {
     background: -webkit-linear-gradient(rgb(152, 201, 208),#9dbfff, rgb(100, 190, 255), rgb(225, 160, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-top: 8%;
+    margin-bottom: -2%;
     color: var(--color-ship-cove);
 }
 
@@ -683,7 +685,9 @@ html body.parallax section div#enterDetails input#enterAmount {
     background: -webkit-linear-gradient(rgb(152, 201, 208),#9dbfff, rgb(100, 190, 255), rgb(225, 160, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 3rem;
+    margin-top: -2rem;
+    padding: 3rem;
+
     font-size: 2.2rem;
     color: var(--color-ship-cove);
 }
