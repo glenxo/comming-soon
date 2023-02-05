@@ -217,36 +217,36 @@
     </section>
 
     <!-- reviews section ends -->
-
     <!-- booking form section starts  -->
+
     <section>
-      <div id="enterDetails">
-        <h1>Booking</h1>
+    <div id="enterDetails">
+      <h1>Booking</h1>
 
-        <p>You will receive a confirmation email with details on the requested date's 
-            availability with the link to purchase the trip.</p>
+      <p>You'll receive a confirmation email with details on the requested date's 
+          availability and a promotional link to purchase the trip. The email will 
+          also include weather information and recommended activities based on the 
+          travelers' interests.</p>
 
-        <h4>Name</h4> 
-        <input id="enterName" placeholder="Enter your Name" type="text">
+      <h4>Where</h4> 
+      <input id="enterDestination" type="text"> 
 
-        <h4>Date</h4> 
-        <input id="enterDate" type="date"> 
+      <h4>When</h4> 
+      <input id="enterDate" type="text"> 
 
-        <h4>Email</h4> 
-        <input id="enterEmail" placeholder="Enter your Email" type="text">
-        
-        <h4>How Many Travelers</h4> 
-        <input id="enterAmount" placeholder="Amount of Visitors"  type="number"> <br><br>
+      <h4>Email</h4> 
+      <input id="enterEmail" type="text">
+      
 
-        <h4>Let us know!</h4> 
-        <p>
-          Based in our predesigned activities and let us know how you'd like to customize your experience!"
-        </p>
-        <input id="enterText" placeholder="Type here"  type="text"> 
+      <h4>How Many</h4> 
+      <input id="enterAmount" type="number">
+      
+      <h4>Let us Know!</h4> 
+      <input id="enterText" type="text"> <br><br>
 
-        <button id="insert">Book this trip</button>
-    <br><br>
-    </div>
+      <button id="insert">Book this trip</button>
+  <br><br>
+  </div>
     </section>    
     <!-- booking form section ends -->
     <!-- footer section starts  -->
@@ -300,6 +300,7 @@
     </div>
   </section>
     <!-- footer section ends -->
+
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
   
@@ -324,6 +325,7 @@
       let enterDate = document.querySelector("#enterDate");
       let enterEmail = document.querySelector("#enterEmail");
       let enterAge = document.querySelector("#enterAmount");
+      let enterText = document.querySelector("#enterText");
   
   
       let insertBtn = document.querySelector("#insert");
@@ -332,14 +334,16 @@
           Date: enterDate.value,
           Email: enterEmail.value,
           Destination: enterDestination.value,
-          Amount: enterAmount.value
+          Amount: enterAmount.value,
+          Text: enterText.value
       })
       .then(() => {
-          alert("Booking added successfully, Check your email for confirmation, now backto home");
+          alert("Booking added successfully, Check your email for confirmation, now back to main page");
           enterDate.value = "";
           enterEmail.value = "";
           enterDestination.value = "";
           enterAmount.value = "";
+          enterText.value = "";
           window.location.replace("https://glenxo.github.io/Lift-Intl-cart/");
       })
       .catch(error => {
