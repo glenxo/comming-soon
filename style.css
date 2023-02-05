@@ -92,7 +92,7 @@ Pallete
     background-position: bottom;
     scroll-behavior: smooth;
     background-repeat: no-repeat;
-    background-size: 200%; /* zoom out the image by 50% */
+    background-size: 210%; /* zoom out the image by 50% */
     position: relative; 
   }
   
@@ -854,7 +854,7 @@ html body.parallax section div#enterDetails input#enterAmount {
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: 120%; /* zoom out the image by 50% */
+      background-size: 100%; /* zoom out the image by 50% */
       min-height: 50px;
       z-index: 100;
     }
@@ -941,7 +941,7 @@ html body.parallax section div#enterDetails input#enterAmount {
       font-weight: bold;
       font-size: 2rem;
       padding: 0rem;
-      color: var(--color-ship-cove);
+      color: var(--color-casper);
   }
   
   
@@ -952,9 +952,9 @@ html body.parallax section div#enterDetails input#enterAmount {
     font-size: 3.6rem;
     margin: 1rem auto;
     margin-top: 5rem;
-    color: var(--color-geraldine);
+    color: #b500fdcc;
     background: var(--color-darker);
-    border: 0.2rem solid var(--color-strikemaster);
+    border: 0.2rem solid var(--color-geraldine);
     border-radius: 1rem;
     -webkit-box-shadow: 0 0.5rem 1rem #1111114d;
     box-shadow: 0 0.5rem 1rem #1111114d;
