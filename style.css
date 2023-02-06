@@ -249,7 +249,7 @@ Pallete
     position: fixed;
     top: 2rem;
     left: 2rem;
-    background: var(--color-strikemaster2);
+    background: #ffffff00;
     color: var(--color-casper2);
     height: 5rem;
     width: 5rem;
@@ -995,7 +995,16 @@ html body.parallax section div#enterDetails input#enterAmount {
       font-size: 4rem;
       color: var(--color-geraldine);
   }
+  .\# > img:nth-child(1) {
+    display: none;
+  }
+
+
 }
+
+
+
+
 
   @media (max-width: 991px) {
     html {
@@ -1248,33 +1257,8 @@ html body.parallax section div#enterDetails input#enterAmount {
   }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
   @media (min-width: 720px) and (max-width: 780px) and (min-height: 1480px) and (max-height: 1540px) {
     .parallax {
       height: 100%;
@@ -1282,10 +1266,6 @@ html body.parallax section div#enterDetails input#enterAmount {
     }
     @media (max-width: 780px) {
     }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 2023px) {
-  
   }
   
   @media (max-width: 780px) {
@@ -1349,43 +1329,8 @@ html body.parallax section div#enterDetails input#enterAmount {
     }
   }
   
-  @media only screen and (max-width: 1380px) and (max-width: 1980px) {
-    .bar-menu {
-      position: absolute;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: #26222900;
-      z-index: 1;
-    }
-  
-    .bar-menu a {
-      text-align: center;
-      padding: 4px 6px;
-      font-size: 15px;
-    }
-  }
-  
-  @media only screen and (max-width: 1340px) {
-    .bar-menu a {
-      text-align: center;
-      padding: 4px 6px;
-      font-size: 14px;
-      -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-      text-stroke: 1px rgb(6, 247, 247);
-      text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    }
-  
-  
-  }
-  
-  
-  
-  
   @media (max-width: 768px) {
-  
-    .header .navbar a {
+      .header .navbar a {
       -webkit-text-stroke: 1.0px rgb(255, 255, 255);
       text-shadow: 0 0 5px #a5cad25b, 
                     0 0 75px #a5cad225;
@@ -1660,100 +1605,6 @@ html body.parallax section div#enterDetails input#enterAmount {
     margin-left: 20px;
     
   }
-  
-  
-  
-  
-  .book-form {
-    width: 80%;
-    margin: 1rem auto;
-    margin-top: 12rem;
-    background: var(--color-darker);
-    border-radius: 1rem;
-    -webkit-box-shadow: 0 0.5rem 1rem #1111114d;
-    box-shadow: 0 0.5rem 1rem #1111114d;
-    padding: 3rem 2rem;
-  }
-  
-  
-  .book-form h2 {
-    -webkit-text-stroke: 2.0px rgb(255, 255, 255);
-    text-shadow: 0 0 5px #a5cad23b, 
-                  0 0 10px #a5cad25b, 
-                  0 0 15px #a5cad252,
-                  0 0 20px #a5cad252, 
-                  0 0 30px #a5cad24d, 
-                  0 0 40px #a5cad254,
-                  0 0 50px #a5cad25e, 
-                  0 0 75px #a5cad267;
-    background: -webkit-linear-gradient(rgb(153, 243, 255),rgb(161, 74, 243), rgb(255, 0, 234));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bolder;
-    font-size: 15vw;
-  }
-  
-  .book-form p {
-    display: none;
-  }
-  
-  .book-form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
-  .book-form form .inputBox {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 25rem;
-    flex: 1 1 25rem;
-  }
-  
-  .book-form form .inputBox span {
-       -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.485);
-      text-shadow: 0 0 5px #a5cad2aa, 
-                  0 0 10px #a5cad25b, 
-                  0 0 20px #a5cad252, 
-                  0 0 40px #c84bb54e,
-                  0 0 75px #ed87e656;
-      background: -webkit-linear-gradient(rgb(152, 201, 208),#9dbfff, rgb(100, 190, 255), rgb(225, 160, 255));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-top: 3rem;
-      margin-left: 5rem;
-    font-size: 2.2rem;
-    color: var(--color-ship-cove);
-  }
-  
-  .book-form form .inputBox input {
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    border-radius: 5rem;
-    border: 0.2rem solid var(--color-geraldine);
-    font-size: 1.6rem;
-    color: var(--color-strikemaster);
-    text-transform: none;
-    background: none;
-    margin-top: 1rem;
-  }
-  
-  .book-form form .btn {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 10rem;
-    flex: 1 1 10rem;
-  }
-  
-  .services .heading h1 {
-    font-size: 15vw;
-  }
-  
-  
   
   .footer .box-container .box h3 {
       -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.485);
