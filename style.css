@@ -786,6 +786,8 @@ html body.parallax section div#enterDetails input#enterAmount {
   font-size: 4vw;
 }
 
+
+
 .footer .box-container .box .share {
   padding-top: 1rem;
 }
@@ -878,16 +880,7 @@ html body.parallax section div#enterDetails input#enterAmount {
   }
   
   @media (max-width: 780px) {
-    body {
-      background: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0)),
-        url(/media/travelbody3.png) no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: 100%; /* zoom out the image by 50% */
-      min-height: 50px;
-      z-index: 100;
-    }
+
   
     #enterDetails {
       text-align: center;
@@ -999,7 +992,12 @@ html body.parallax section div#enterDetails input#enterAmount {
   .\# > img:nth-child(1) {
     display: none;
   }
-
+  .footer .box-container .box .logo {
+    font-size: 35px;
+    margin-top: 15%;
+    margin-bottom: -25%;
+  }
+  
 
 }
 
@@ -1299,7 +1297,7 @@ html body.parallax section div#enterDetails input#enterAmount {
       background-position: bottom;
       scroll-behavior: smooth;
       background-repeat: no-repeat;
-      background-size: 1100%; /* zoom out the image by 50% */
+      background-size: 900%; /* zoom out the image by 50% */
       position: relative; 
     }
   
@@ -1663,13 +1661,6 @@ html body.parallax section div#enterDetails input#enterAmount {
     color: var(--color-geraldine);
   }
   
-}
-
-
-@media only screen and (max-width: 480px) {
-  .footer {
-    background-image: none; /* hide the background image */
-  }
 }
   
   @media (max-width: 450px) {
