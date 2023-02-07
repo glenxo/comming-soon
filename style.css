@@ -628,6 +628,7 @@ input {
 
 
 html body.parallax section div#enterDetails input#enterName,
+html body.parallax section div#enterDetails input#enterTime,
 html body.parallax section div#enterDetails input#enterText,
 html body.parallax section div#enterDetails input#enterDestination,
 html body.parallax section div#enterDetails input#enterDate,
@@ -1024,10 +1025,19 @@ html body.parallax section div#enterDetails input#enterAmount {
     #menu-btn {
       display: inline-block;
     }
-  
+    
     .bar-menu {
       display: none;
     }
+  } 
+  
+  
+  @media only screen and (max-width: 1780px) {
+
+    h6.logo > i:nth-child(1) > img:nth-child(1) {
+      display: none;
+    }
+
   }
   
   @media only screen and (max-width: 1380px) and (max-width: 1980px) {
@@ -1056,9 +1066,7 @@ html body.parallax section div#enterDetails input#enterAmount {
       -webkit-text-stroke: 0.5px rgb(255, 255, 255);
       text-stroke: 1px rgb(6, 247, 247);
       text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    }
-  
-  
+    }  
   }
   
   
@@ -1658,14 +1666,11 @@ html body.parallax section div#enterDetails input#enterAmount {
 }
 
 
-
-
-  
-  @media only screen and (max-width: 480px) {
-    .footer {
-      background-image: none; /* hide the background image */
-    }
+@media only screen and (max-width: 480px) {
+  .footer {
+    background-image: none; /* hide the background image */
   }
+}
   
   @media (max-width: 450px) {
     html {

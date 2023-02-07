@@ -191,7 +191,10 @@
       <input id="enterName" placeholder="Enter your Name" type="text"> 
 
       <h4>Date</h4> 
-      <input id="enterDate" type="date"> 
+      <input id="enterDate" type="date">
+
+      <h4>Best Time</h4> 
+      <input id="enterTime" type="time"> 
 
       <h4>Email</h4> 
       <input id="enterEmail" placeholder="Enter your Email" type="email">
@@ -238,7 +241,7 @@
           <div class="">
                       <h6 href="#" class="logo">
             <i class="#">
-              <img src="cart/cascada embera/logo1.png" alt="">
+              <img src="cart/cascada embera/logo.png" alt="">
             </i>
           </h6>
           </div>
@@ -279,10 +282,11 @@
       import {getDatabase, ref, get, set, child, update, remove}
       from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
   
-      const db = getDatabase();
+      const db = getDatabase(); 
   
       let enterName = document.querySelector("#enterName");
       let enterDate = document.querySelector("#enterDate");
+      let enterTime = document.querySelector("#enterTime");
       let enterEmail = document.querySelector("#enterEmail");
       let enterAge = document.querySelector("#enterAmount");
       let enterText = document.querySelector("#enterText");
@@ -292,6 +296,7 @@
   function InsertData() {
       set(ref(db, "Bookings/" + enterName.value), {
           Date: enterDate.value,
+          Time: enterTime.value,
           Email: enterEmail.value,
           Name: enterName.value,
           Amount: enterAmount.value,
@@ -300,6 +305,7 @@
       .then(() => {
           alert("Booking added successfully, Check your email for confirmation, now back to main page");
           enterDate.value = "";
+          enterTime.value = "";
           enterEmail.value = "";
           enterName.value = "";
           enterAmount.value = "";
