@@ -1297,7 +1297,7 @@ html body.parallax section div#enterDetails input#enterAmount {
       background-position: bottom;
       scroll-behavior: smooth;
       background-repeat: no-repeat;
-      background-size: 930%; /* zoom out the image by 50% */
+      background-size: 950%; /* zoom out the image by 50% */
       position: relative; 
     }
   
