@@ -393,23 +393,25 @@
     </div>
     <!-- footer section ends -->
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    <script type="module">        
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+
   
-      const firebaseConfig = {
-      apiKey: "AIzaSyD4TGx85JwOrVStOuCwzRIR_SfyK1ePUN0",
-      authDomain: "bookingwidget-51b84.firebaseapp.com",
-      databaseURL: "https://bookingwidget-51b84-default-rtdb.firebaseio.com",
-      projectId: "bookingwidget-51b84",
-      storageBucket: "bookingwidget-51b84.appspot.com",
-      messagingSenderId: "387804356437",
-      appId: "1:387804356437:web:ddaed0de5ab81581c759dc"
-      };
+  const firebaseConfig = {
+    apiKey: "AIzaSyATq3THtOyzfjPf0cNyK31B8eFfOw9_o00",
+    authDomain: "lift-intl-booking-widget.firebaseapp.com",
+    databaseURL: "https://lift-intl-booking-widget-default-rtdb.firebaseio.com",
+    projectId: "lift-intl-booking-widget",
+    storageBucket: "lift-intl-booking-widget.appspot.com",
+    messagingSenderId: "698604225977",
+    appId: "1:698604225977:web:75c1f8b0c344cbc5e32268",
+    measurementId: "G-VGZWMTZ3HJ"
+  };
   
       const app = initializeApp(firebaseConfig);
   
       import {getDatabase, ref, get, set, child, update, remove}
-      from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+      from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
   
       const db = getDatabase(); 
   
